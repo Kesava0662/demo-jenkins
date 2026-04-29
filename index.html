@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kesava DevOps Project</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1d2671, #c33764);
-            color: white;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Deployment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center/cover;
+    }
 
-        .container {
-            margin-top: 120px;
-        }
+    .card {
+      width: 450px;
+      padding: 40px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      color: white;
+    }
 
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
+    h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
 
-        p {
-            font-size: 22px;
-            margin-bottom: 30px;
-        }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-        .box {
-            display: inline-block;
-            padding: 25px 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
-        }
+    .status {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #00c853;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-        .footer {
-            margin-top: 100px;
-            font-size: 16px;
-            opacity: 0.8;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 25px;
-            background: white;
-            color: #c33764;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background: #f1f1f1;
-        }
-    </style>
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="box">
-            <h1>🚀 DevOps CI/CD Demo</h1>
-            <p>Successfully deployed using Jenkins + Docker + GitHub Webhook</p>
-            <a href="#" class="button">Deployment Successful</a>
-        </div>
+  <div class="card">
+    <h1>🌐 Deployment Success</h1>
+    <p>
+      Your application has been deployed automatically
+      using <strong>Jenkins</strong>, <strong>Docker</strong>,
+      and <strong>GitHub Webhooks</strong>.
+    </p>
+
+    <div class="status">
+      ✅ LIVE NOW
     </div>
 
     <div class="footer">
-        Created by Kesava | AWS EC2 + Jenkins Pipeline Project
+      Powered by Kesava DevOps Project
     </div>
+  </div>
 
 </body>
 </html>
