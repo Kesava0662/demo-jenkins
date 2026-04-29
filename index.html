@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+            background: linear-gradient(to right, #1d2671, #c33764);
             color: white;
             text-align: center;
         }
@@ -19,8 +19,8 @@
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 50px;
+            margin-bottom: 10px;
         }
 
         p {
@@ -29,45 +29,48 @@
         }
 
         .box {
-            background: rgba(255,255,255,0.15);
-            padding: 25px;
-            width: 60%;
-            margin: auto;
-            border-radius: 12px;
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+            display: inline-block;
+            padding: 25px 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
 
         .footer {
-            margin-top: 50px;
+            margin-top: 100px;
             font-size: 16px;
-            color: #ddd;
+            opacity: 0.8;
         }
 
-        .btn {
-            background: #ff9800;
-            color: white;
-            padding: 12px 24px;
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #c33764;
             text-decoration: none;
             border-radius: 8px;
-            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
-        .btn:hover {
-            background: #e68900;
+        .button:hover {
+            background: #f1f1f1;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="box">
             <h1>🚀 DevOps CI/CD Demo</h1>
             <p>Successfully deployed using Jenkins + Docker + GitHub Webhook</p>
-            <a href="#" class="btn">Deployment Success</a>
-        </div>
-
-        <div class="footer">
-            <p>Created by Kesava | AWS EC2 Project</p>
+            <a href="#" class="button">Deployment Successful</a>
         </div>
     </div>
+
+    <div class="footer">
+        Created by Kesava | AWS EC2 + Jenkins Pipeline Project
+    </div>
+
 </body>
 </html>
